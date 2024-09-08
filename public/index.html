@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Run JavaScript inside the Browser! 🤯</h1>
+        <div id="auth">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button id="login">Login</button>
+        </div>
+    </div>
+
+    <div class="snippets">
+        <button id="create_snippet">Save Snippet</button><button id="delete_snippet">Delete Snippet</button>
+        <select id="snippets">
+            <option value="0">Select a snippet...</option>
+        </select>
+        <input type="text" id="snippet_name" placeholder="Snippet Name">
+    </div>
+
+    <div class="grid">
+        <textarea id="code_area"></textarea>
+
+        <button id="run">Run</button>
+
+        <textarea id="result" disabled placeholder="Output..."></textarea>
+
+        <textarea id="console" disabled placeholder="Console..."></textarea>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

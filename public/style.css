@@ -1,0 +1,78 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: calc(100vh - 42px);
+    margin: 20px;
+    
+}
+
+#code_area {
+    border: none;
+    resize: none;
+}
+
+.grid {
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr 50px 1fr;
+    gap: 20px;
+}
+
+#run {
+    align-self: center;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+button, textarea, input, select {
+    border: none;
+    background-color: #F1F1F1;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #E1E1E1;
+}
+
+#console {
+    grid-column: 1 / 4;
+    background-color: #222222;
+    color: #F5F5F5;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#auth.success #username {
+    display: none;
+}
+
+#auth.success #password {
+    display: none;
+}
+
+.snippets {
+    height: 60px;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.snippets button, .snippets select, .snippets input {
+    padding: 10px;
+}
